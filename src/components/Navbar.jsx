@@ -1,19 +1,22 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const NavbarStyles = styled.section`
-    color: white;
-    background: #ADD8E6;
+    background: blue;
     display: flex;
-
+    flex-direction: row;
+    justify-content: space-around;
 `;
 
+const Logo = styled.h1`
+    color: white;
+`;
 
 const Navbar = () => {
     return (
         <NavbarStyles>
-            <h1>Benji's Animal Shelter</h1>
+            <Logo>Benji's Animal Shelter</Logo>
         </NavbarStyles>
     );
 };
 
-export default Navbar
+export default Navbar;
